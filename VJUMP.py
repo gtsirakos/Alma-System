@@ -38,6 +38,8 @@ t_impulse=None
 t_flight=None
 ver_jump=0
 
+serialReading.create_thread()
+
 # DEFS FOR MENU SIMPLE VERTICAL JUMPS
 def  data_kouti(surname, name, sclub,sport, ybirth, weight, height,pbjump, email,dokimasia):
                 root1 = Tk()
@@ -395,7 +397,6 @@ def time_data3(t_initial, t_impulse, t_flight, ver_jump,surname, name, sclub, sp
 
 # ΡΟΥΤΙΝΕΣ DATA RETRIEVE ΑΠΛΩΝ ΜΕΜΟΝΟΜΕΝΩΝ ΑΛΜΑΤΩΝ
 def kataxorisi_data0(surname, name, sclub, sport, ybirth, weight, height, pbjump, email,dokimasia):
-                    serialReading.create_thread()
                     surname = (surname.get())
                     name = (name.get())
                     sclub = (sclub.get())

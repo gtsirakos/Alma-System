@@ -85,13 +85,10 @@ def microbit_touched():
     global previous_status
     global status
     if status == '':
-        print(status , previous_status)
         return previous_status
     elif status == '0':
-        print(status , True)
         previous_status = True
         return True
     elif status == '1':
-        print(status , False)
         previous_status = False
         return False
